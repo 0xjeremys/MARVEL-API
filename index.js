@@ -35,7 +35,7 @@ app.all("*", (req, res) => {
 });
 
 //server starting
-const PORT = 3000;
+
 app.listen(PORT, () => {
   console.log(`Serveur en cours d'exécution sur le port ${process.env.PORT}`);
 });
