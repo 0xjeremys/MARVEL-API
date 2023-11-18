@@ -48,9 +48,9 @@ router.get("/comics/:characterId", async (req, res) => {
 //route comicID tested on postman: ok
 router.get("/comic/:comicId", async (req, res) => {
   try {
-    const { comicsId } = req.params;
+    const { comicId } = req.params;
 
-    const marvelApiUrl = `https://lereacteur-marvel-api.herokuapp.com/comic/${comicsId}?apiKey=${process.env.API_KEY}`;
+    const marvelApiUrl = `https://lereacteur-marvel-api.herokuapp.com/comic/${comicId}?apiKey=${process.env.API_KEY}`;
 
     const response = await axios.get(marvelApiUrl);
 
